@@ -1,7 +1,13 @@
 // Require the necessary discord.js classes
 import { Client, Events, GatewayIntentBits } from'discord.js'
+import vueInit from '@/core/vue'
 import dotenv from'dotenv'
 
+import { loadCommands } from '@/core/loader'
+
+loadCommands()
+
+vueInit()
 dotenv.config()
 
 // Create a new client instance
@@ -15,3 +21,5 @@ client.once(Events.ClientReady, c => {
 
 // Log in to Discord with your client's token
 client.login(process.env.TOKEN);
+
+//快捷啟動 yarn dev
