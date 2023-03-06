@@ -8,6 +8,6 @@ export const command = new SlashCommandBuilder()
  .setName('ping')
  .setDescription('ping command')
 
-export const action = async (interaction) =>{
-    await interaction.reply('pong')
+export const action = async (ctx) =>{
+    ctx.reply('pong')
 }
