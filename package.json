@@ -1,7 +1,7 @@
 {
   "type": "module",
   "scripts": {
-    "dev": "vite-node test/main.js"
+    "dev": "vite-node YaeMiko/main.js"
   },
   "dependencies": {
     "discord.js": "^14.7.1",

@@ -19,7 +19,7 @@ export const loadCommands = async () => {
     const appStore = useAppStore()
     const commands = []
     const actions = new Collection()
-    const files = await fg('./test/commands/**/index.js')
+    const files = await fg('./YaeMiko/commands/**/index.js')
 
     for (const file of files){
         const cmd = await import(file)
@@ -36,7 +36,7 @@ export const loadCommands = async () => {
 export const loadEvents = async() => {
     const appStore = useAppStore()
     const client = appStore.client
-    const files = await fg('./test/events/**/index.js')
+    const files = await fg('./YaeMiko/events/**/index.js')
     for (const file of files){
         const eventFile = await import(file)
 
