@@ -8,6 +8,7 @@ const updateSlashCommands = async(commands,GuildId)=>{
         Routes.applicationGuildCommands(
             process.env.APPLICATION_ID,
             GuildId = '1001340180642402437'
+            //GuildId  = '1069499263630970919'
         ),
         {
             body:commands,
