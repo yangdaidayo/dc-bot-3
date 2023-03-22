@@ -22,5 +22,7 @@ export const action = async (ctx) =>{
     else if (5>=number){
         return ctx.reply('啊啦~居然是大吉呢，小傢伙，要好好把握難得的運氣喔')
     }
+    else 
+        return ctx.replay('程式出現錯誤啦~ @羊呆 快來修')
     
 }
